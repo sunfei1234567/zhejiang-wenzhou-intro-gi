@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenzhou Impressions - 温州印象</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Hero Section - Carousel -->
+    <section class="hero">
+        <div class="hero-carousel">
+            <div class="carousel-slide active">
+                <img src="./images/lunbo1.jpeg" alt="Wenzhou Cityscape" class="hero-img" referrerpolicy="no-referrer">
+            </div>
+            <div class="carousel-slide">
+                <img src="./images/lunbo2.jpg" alt="Wenzhou Bridge" class="hero-img" referrerpolicy="no-referrer">
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button class="indicator active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="indicator" data-slide="1" aria-label="Slide 2"></button>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-btn carousel-prev" aria-label="Previous slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <button class="carousel-btn carousel-next" aria-label="Next slide">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+
+        <div class="hero-content">
+            <div class="hero-text animate-fade-up">
+                <p class="hero-subtitle">Zhejiang, China</p>
+                <h1 class="hero-title">Wenzhou</h1>
+                <p class="hero-description">
+                    A city of mountains, rivers, and entrepreneurial spirit. Discover the poetry of the Oujiang River
+                    and the majesty of Yandang Mountain.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history">
+        <div class="history-container">
+            <div class="history-grid">
+                <div class="history-text animate-slide-left">
+                    <h2 class="section-label">History & Culture</h2>
+                    <h3 class="history-title">
+                        2,200 Years <br>
+                        <span class="italic-light">of Legacy</span>
+                    </h3>
+                    <div class="history-paragraphs">
+                        <p>
+                            Known as Dong'ou in ancient times, Wenzhou is the birthplace of China's landscape poetry and
+                            the cradle of the Southern Opera (Nanxi).
+                        </p>
+                        <p>
+                            Beyond its artistic heritage, Wenzhou is globally renowned for the "Wenzhou Model"—a
+                            testament to the fierce entrepreneurial spirit and resilience of its people, who have built
+                            commercial networks spanning the globe.
+                        </p>
+                    </div>
+
+                    <div class="history-accent">
+                        <div class="accent-line"></div>
+                        <span class="accent-text">The Spirit of Ou</span>
+                    </div>
+                </div>
+
+                <div class="history-images">
+                    <div class="history-main-img animate-scale-in">
+                        <img src="./images/1.jpg"
+                            alt="Traditional Architecture" class="img-luminosity" referrerpolicy="no-referrer">
+                        <div class="img-gradient-overlay"></div>
+                    </div>
+
+                    <div class="history-secondary-img animate-slide-up">
+                        <img src="./images/2.jpg" alt="Calligraphy"
+                            referrerpolicy="no-referrer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="attractions">
+        <div class="attractions-container">
+            <div class="attractions-header">
+                <h2 class="attractions-title animate-fade-up">
+                    Breathtaking <span class="accent-red">Landscapes</span>
+                </h2>
+                <p class="attractions-subtitle animate-fade-up delay-1">
+                    From the misty peaks of Yandang to the tranquil flow of the Nanxi River, Wenzhou's natural beauty
+                    has inspired poets for millennia.
+                </p>
+            </div>
+
+            <div class="attractions-grid">
+                <!-- Wenzhou City in the Early Morning -->
+                <div class="attraction-card attraction-large animate-fade-up delay-1">
+                    <img src="./images/3.jpg" alt="Wenzhou City in the Early Morning"
+                        class="attraction-img" referrerpolicy="no-referrer">
+                    <div class="attraction-overlay"></div>
+                    <div class="attraction-content">
+                        <p class="attraction-subtitle">Wenzhou City in the Early Morning</p>
+                        <h3 class="attraction-name">Wenzhou City in the Early Morning</h3>
+                        <p class="attraction-desc">
+                             Wenzhou City in the Early Morning
+                        </p>
+                    </div>
+                </div>
+
+                <!--Miaoguo Temple  -->
+                <div class="attraction-card animate-fade-up delay-2">
+                    <img src="./images/4.jpg" alt="Miaoguo Temple" class="attraction-img"
+                        referrerpolicy="no-referrer">
+                    <div class="attraction-overlay"></div>
+                    <div class="attraction-content">
+                        <p class="attraction-subtitle">Historic Buddhist Temple</p>
+                        <h3 class="attraction-name">Miaoguo Temple</h3>
+                        <p class="attraction-desc">
+                            Founded in 1008 AD during the Northern Song Dynasty. Home to the legendary "Pig Head Bell" and serves as the seat of Wenzhou Buddhist Association.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ma'anchi Park -->
+                <div class="attraction-card animate-fade-up delay-3">
+                    <img src="./images/5.jpg" alt="Ma'anchi Park"
+                        class="attraction-img" referrerpolicy="no-referrer">
+                    <div class="attraction-overlay"></div>
+                    <div class="attraction-content">
+                        <p class="attraction-subtitle">Wenzhou's Monet Garden</p>
+                        <h3 class="attraction-name">Ma'anchi Tulip Garden</h3>
+                        <p class="attraction-desc">
+                            310,000 tulips across 6,500㎡ of stunning lakeside gardens. Spring's most Instagram-worthy spot with mountain-water landscapes and flower-lined paths. Free entry!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Lighthouse at Sunset -->
+                <div class="attraction-card attraction-large animate-fade-up delay-4">
+                    <img src="./images/6.jpg" alt="Lighthouse at Sunset"
+                        class="attraction-img" referrerpolicy="no-referrer">
+                    <div class="attraction-overlay"></div>
+                    <div class="attraction-content">
+                        <p class="attraction-subtitle">Coastal Landmark</p>
+                        <h3 class="attraction-name">Lighthouse at Sunset</h3>
+                        <p class="attraction-desc">
+                            A iconic beacon standing against golden skies, where the East China Sea meets the warm glow of dusk. A perfect spot for photographers and romantics alike.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gastronomy Section -->
+    <section class="gastronomy">
+        <div class="gastronomy-container">
+            <div class="gastronomy-grid">
+                <div class="gastronomy-text animate-fade-up">
+                    <div>
+                        <h2 class="gastronomy-title">
+                            The Taste of <br>
+                            <span class="italic-gold">Ou River</span>
+                        </h2>
+                        <p class="gastronomy-intro">
+                            Wenzhou cuisine, a vital branch of Zhejiang culinary tradition, emphasizes freshness,
+                            lightness, and the natural flavors of seafood.
+                        </p>
+                    </div>
+
+                    <div class="food-list">
+                        <div class="food-item">
+                            <h4 class="food-name">Wenzhou Fish Balls</h4>
+                            <p class="food-desc">Unlike round fish balls, these are irregular strips of fresh fish
+                                paste, offering a unique, chewy texture in a clear, peppery broth.</p>
+                        </div>
+                        <div class="food-item">
+                            <h4 class="food-name">Glutinous Rice (Nuomi Fan)</h4>
+                            <p class="food-desc">The quintessential Wenzhou breakfast. Steamed sticky rice topped with
+                                savory minced pork sauce and crispy youtiao (fried dough) bits.</p>
+                        </div>
+                        <div class="food-item">
+                            <h4 class="food-name">Fresh Seafood</h4>
+                            <p class="food-desc">Bordering the East China Sea, Wenzhou offers an abundance of incredibly
+                                fresh seafood, often simply steamed to preserve its natural sweetness.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gastronomy-images">
+                    <div class="food-main-img animate-scale-rotate">
+                        <img src="./images/7.jpg" alt="Wenzhou Seafood"
+                            referrerpolicy="no-referrer">
+                    </div>
+
+                    <div class="food-secondary-img-1 animate-slide-in-right">
+                        <img src="./images/8.jpg" alt="Fish Balls"
+                            referrerpolicy="no-referrer">
+                    </div>
+
+                    <div class="food-secondary-img-2 animate-slide-in-left">
+                        <img src="./images/9.jpg" alt="Glutinous Rice"
+                            referrerpolicy="no-referrer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location">
+        <div class="location-container">
+            <div class="location-header">
+                <div class="location-label animate-fade-up">
+                    <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <h2 class="section-label">Location</h2>
+                </div>
+                <h3 class="location-title animate-fade-up delay-1">
+                    Where the River <br>
+                    <span class="italic-gold">Meets the Sea</span>
+                </h3>
+                <p class="location-desc animate-fade-up delay-2">
+                    Situated on the southeastern coast of Zhejiang Province, Wenzhou is a vibrant port city surrounded
+                    by majestic mountains and the East China Sea.
+                </p>
+            </div>
+
+            <div class="location-map animate-fade-up delay-3">
+                <div class="map-shadow"></div>
+                <iframe src="https://maps.google.com/maps?q=Wenzhou,Zhejiang,China&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="100%" style="border: 0;" allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="map-iframe"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section (AI Search) -->
+    <section class="explore">
+        <div class="explore-container">
+            <div class="explore-header">
+                <h2 class="explore-title">Discover Wenzhou</h2>
+                <p class="explore-subtitle">Ask anything about our local culture, food, or current events.</p>
+            </div>
+
+            <form class="explore-form" id="exploreForm">
+                <input type="text" id="exploreInput" placeholder="e.g., What are the famous local snacks in Wenzhou?"
+                    class="explore-input">
+                <button type="submit" id="exploreBtn" class="explore-btn">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg>
+                    <svg class="loader-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                    </svg>
+                </button>
+            </form>
+
+            <div id="exploreResponse" class="explore-response hidden">
+                <div class="response-content"></div>
+                <div class="response-sources hidden">
+                    <h4 class="sources-title">Sources</h4>
+                    <ul class="sources-list"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wenzhou History & Culture Section -->
+    <section class="itinerary">
+        <div class="itinerary-container">
+            <div class="itinerary-grid">
+                <div class="itinerary-form-section">
+                    <h2 class="itinerary-title">Wenzhou <br><span class="italic-gold">History & Culture</span></h2>
+                    <p class="itinerary-intro">
+                        Discover 2,200 years of rich heritage. From the birthplace of Chinese landscape poetry to the cradle of Southern Opera, explore the cultural treasures that shaped this remarkable city.
+                    </p>
+
+                    <div class="culture-topics">
+                        <div class="culture-topic">
+                            <h4 class="topic-title">📜 Landscape Poetry</h4>
+                            <p class="topic-desc">Birthplace of China's landscape poetry tradition, inspiring poets for millennia with its misty mountains and flowing rivers.</p>
+                        </div>
+                        <div class="culture-topic">
+                            <h4 class="topic-title">🎭 Southern Opera (Nanxi)</h4>
+                            <p class="topic-desc">The cradle of Nanxi, one of China's oldest theatrical forms, originating during the Song Dynasty.</p>
+                        </div>
+                        <div class="culture-topic">
+                            <h4 class="topic-title">💼 Wenzhou Model</h4>
+                            <p class="topic-desc">A testament to the fierce entrepreneurial spirit that built global commercial networks.</p>
+                        </div>
+                      
+                    </div>
+                </div>
+
+                <div class="itinerary-result-section">
+                    <div class="culture-showcase">
+                        <div class="culture-card">
+                            <h3 class="culture-card-title">Famous Personalities</h3>
+                            <ul class="culture-list">
+                                <li><strong>Wang Shizhen</strong> - Ming Dynasty philosopher & writer</li>
+                                <li><strong>Xie Lingyun</strong> - Pioneer of landscape poetry</li>
+                                <li><strong>Gao Zecheng</strong> - Founder of Southern Opera</li>
+                                <li><strong>Sun Yirang</strong> - Qing Dynasty scholar & educator</li>
+                            </ul>
+                        </div>
+                        <div class="culture-card">
+                            <h3 class="culture-card-title">Cultural Heritage Sites</h3>
+                            <ul class="culture-list">
+                                <li><strong>Jiangxin Islet</strong> - Poetry Island with twin pagodas</li>
+                                <li><strong>Miaoguo Temple</strong> - 1,000-year-old Buddhist temple</li>
+                                <li><strong>Yandang Mountain</strong> - UNESCO Global Geopark</li>
+                                <li><strong>Nanxi River</strong> - Ancient village landscapes</li>
+                            </ul>
+                        </div>
+                        <div class="culture-card">
+                            <h3 class="culture-card-title">Traditional Arts</h3>
+                            <ul class="culture-list">
+                                <li><strong>Wenzhou Opera</strong> - Unique local theatrical style</li>
+                                <li><strong>Ou Embroidery</strong> - Traditional needlework art</li>
+                                <li><strong>Wenzhou Paper-cutting</strong> - Folk art heritage</li>
+                                <li><strong>Traditional Medicine</strong> - Ancient healing practices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wenzhou Promotional Video Section -->
+    <section class="video-section">
+        <div class="video-container">
+            <div class="video-bg-blur"></div>
+
+            <div class="video-content">
+                <div class="video-header">
+                    <div class="video-icon-wrapper">
+                        <svg class="video-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                    </div>
+                    <div class="video-title-wrapper">
+                        <h2 class="video-title">Wenzhou Promotional Video</h2>
+                        <p class="video-subtitle">Experience the beauty and charm of Zhejiang's coastal gem.</p>
+                    </div>
+                </div>
+
+                <div class="video-player-wrapper">
+                    <div class="video-player">
+                        <video id="wenzhouVideo" class="video-element" poster="./video/video-cover.jpg" controls>
+                            <source src="./video/wenzhou-promo.mp4" type="video/mp4">
+                            <p>Your browser does not support the video tag. Please download the video to watch.</p>
+                        </video>
+                        <div class="video-overlay" id="videoOverlay">
+                            <button class="video-play-btn" id="videoPlayBtn" aria-label="Play video">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-info">
+                    <div class="video-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">2,200+</span>
+                            <span class="stat-label">Years of History</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">9.5M</span>
+                            <span class="stat-label">Population</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">#1</span>
+                            <span class="stat-label">Business Hub</span>
+                        </div>
+                    </div>
+                    <p class="video-description">
+                        Discover Wenzhou, where ancient heritage meets modern innovation. From the misty peaks of Yandang Mountain to the bustling streets of the business district, experience a city that has inspired poets and entrepreneurs for millennia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© <span id="currentYear"></span> Wenzhou Tourism. </p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
