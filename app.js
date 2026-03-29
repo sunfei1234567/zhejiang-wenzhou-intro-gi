@@ -1,7 +1,3 @@
-/**
- * Wenzhou Impressions - Pure JavaScript Version
- * Converted from React
- */
 
 // ========================================
 // Utility Functions
@@ -145,8 +141,7 @@ function initExplore() {
     response.classList.add('hidden');
 
     try {
-      // Note: In a real implementation, you would need to set up a backend
-      // or use a proxy to handle API calls securely
+      // Note: In a real implementation, 
       // This is a placeholder for the actual API integration
       const result = await mockExploreSearch(query);
       displayExploreResponse(result);
@@ -165,8 +160,7 @@ function initExplore() {
 }
 
 async function mockExploreSearch(query) {
-  // This is a mock function. In production, replace with actual API call
-  // You would need to implement a backend endpoint to securely call the Gemini API
+  // This is a mock function. 
   
   // Simulate API delay
   await new Promise(resolve => setTimeout(resolve, 1500));
@@ -205,68 +199,6 @@ function displayExploreResponse(result) {
 
   response.classList.remove('hidden');
   response.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-}
-
-// ========================================
-// Itinerary Section
-// ========================================
-
-function initItinerary() {
-  const generateBtn = $('#generateBtn');
-
-  // Check if itinerary section exists (it may have been replaced with culture section)
-  if (!generateBtn) {
-    console.log('Itinerary section not found - skipped initialization');
-    return;
-  }
-
-  const daysSelect = $('#daysSelect');
-  const interestsInput = $('#interestsInput');
-  const sparklesIcon = generateBtn.querySelector('.sparkles-icon');
-  const loaderIcon = generateBtn.querySelector('.loader-icon');
-  const btnText = generateBtn.querySelector('.btn-text');
-
-  generateBtn.addEventListener('click', async () => {
-    const days = daysSelect.value;
-    const interests = interestsInput.value.trim();
-
-    // Show loading state
-    generateBtn.disabled = true;
-    sparklesIcon.classList.add('hidden');
-    loaderIcon.classList.remove('hidden');
-    btnText.textContent = 'Deep Thinking...';
-
-    try {
-      const itinerary = await mockGenerateItinerary(days, interests);
-      displayItinerary(itinerary);
-    } catch (error) {
-      console.error('Itinerary generation error:', error);
-      displayItinerary('Sorry, I couldn\'t generate an itinerary at this time. Please try again later.');
-    } finally {
-      generateBtn.disabled = false;
-      sparklesIcon.classList.remove('hidden');
-      loaderIcon.classList.add('hidden');
-      btnText.textContent = 'Generate Itinerary';
-    }
-  });
-}
-
-async function mockGenerateItinerary(days, interests) {
-  // This is a mock function. In production, replace with actual API call
-  await new Promise(resolve => setTimeout(resolve, 2000));
-
-  const interestText = interests || 'a mix of nature, culture, and food';
-  
-  return `# Your ${days}-Day Wenzhou Journey\n\n*Crafted for travelers interested in: ${interestText}*\n\n---\n\n## Day 1: Arrival & City Exploration\n\n### Morning\n- **Jiangxin Islet** - Start your journey at this historic island park in the middle of the Oujiang River. Visit the twin pagodas and explore the ancient temples that have stood for centuries.\n\n### Afternoon\n- **Wuma Street** - Wander through Wenzhou's most famous pedestrian street, perfect for experiencing local culture and shopping.\n- **Try Wenzhou Fish Balls** - Don't miss this unique local delicacy!\n\n### Evening\n- **Oujiang River Night View** - Enjoy the beautiful illuminated riverfront.\n\n---\n\n## Day 2: Natural Wonders\n\n### Full Day\n- **Yandang Mountain** (if time permits for a day trip) OR\n- **Nanxi River** - Take a bamboo raft ride down the crystal-clear waters, passing ancient villages and lush mountains.\n\n### Cultural Experience\n- Visit a traditional tea house and enjoy local Oolong tea.\n\n---\n\n${days >= 3 ? `## Day 3: Culture & Cuisine\n\n### Morning\n- **Wenzhou Museum** - Deep dive into the city's 2,200-year history.\n\n### Afternoon\n- **Local Food Tour** - Sample:\n  - Glutinous Rice (Nuomi Fan) for breakfast\n  - Fresh seafood at a local restaurant\n  - Traditional pastries\n\n### Evening\n- **Southern Opera Performance** - If available, experience this ancient art form that originated in Wenzhou.\n\n---\n` : ''}${days >= 5 ? `## Day 4-5: Extended Exploration\n\n### Day 4: Wuyanling Nature Reserve\n- Explore the pristine subtropical forest\n- Bird watching and nature photography\n- Visit the source of the Feiyun River\n\n### Day 5: Ancient Villages\n- Visit traditional Wenzhou villages\n- Experience rural life and architecture\n- Shop for local handicrafts\n\n---\n` : ''}\n## Travel Tips\n\n- **Best Time to Visit**: Spring (March-May) or Autumn (September-November)\n- **Getting Around**: The city has good public transportation; taxis are affordable\n- **Language**: Mandarin is widely spoken; Wenzhou dialect is very distinct\n- **Currency**: Chinese Yuan (CNY)\n\nEnjoy your journey through this beautiful city where mountains meet the sea! 🏔️🌊`;
-}
-
-function displayItinerary(itinerary) {
-  const resultPlaceholder = $('#itineraryResult');
-  const contentDiv = $('#itineraryContent');
-
-  resultPlaceholder.classList.add('hidden');
-  contentDiv.innerHTML = markdownToHtml(itinerary);
-  contentDiv.classList.remove('hidden');
 }
 
 // ========================================
@@ -315,35 +247,6 @@ function initVideoPlayer() {
       }
     }
   });
-}
-
-// ========================================
-// Music Player Section (Deprecated - kept for reference)
-// ========================================
-
-function initMusicPlayer() {
-  const generateBtn = $('#generateMusicBtn');
-  if (!generateBtn) return; // Section removed from HTML
-
-  // Music player functionality removed
-  console.log('Music player section has been replaced with video section');
-}
-
-async function mockGenerateMusic(prompt) {
-  // This is a mock function. In production:
-  // 1. You need a backend endpoint to call the Lyria API securely
-  // 2. The API returns base64 audio data that needs to be converted to a Blob
-  
-  // Simulate API delay
-  await new Promise(resolve => setTimeout(resolve, 3000));
-  
-  // For demo purposes, return a placeholder audio URL
-  // In production, this would be a blob URL created from the API response
-  console.log('Music prompt:', prompt);
-  
-  // Return null to indicate this is a mock (no actual audio)
-  // In production, return the actual blob URL
-  return null;
 }
 
 // ========================================
@@ -411,46 +314,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroCarousel();
   initScrollAnimations();
   initExplore();
-  initItinerary();
   initVideoPlayer();
-  initMusicPlayer();
   initFooter();
 
   console.log('🎋 Wenzhou Impressions - Loaded successfully!');
 });
 
-// ========================================
-// API Integration Notes
-// ========================================
-
-/*
-To make the AI features work in production, you need to:
-
-1. **Explore Search & Itinerary:**
-   - Set up a backend endpoint (Node.js/Express, Python/Flask, etc.)
-   - Use the Google GenAI SDK on the backend
-   - Call the Gemini API from your backend
-   - Frontend makes requests to your backend endpoint
-
-2. **Music Generation:**
-   - Similar setup with backend proxy
-   - Use the Lyria API through Google GenAI
-   - Handle the streaming response and convert base64 to audio blob
-   - Return the audio URL to frontend
-
-3. **Environment Variables:**
-   - Store GEMINI_API_KEY securely on your backend
-   - Never expose API keys in frontend code
-
-Example backend endpoint structure:
-
-```javascript
-// server.js (Express example)
-app.post('/api/explore', async (req, res) => {
-  const { query } = req.body;
-  const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-  const result = await ai.models.generateContent({...});
-  res.json(result);
-});
-```
-*/
